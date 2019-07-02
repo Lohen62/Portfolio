@@ -1,16 +1,33 @@
+@font-face{
+  font-family: 'manga';
+  src: url("../src/font/manga/Manga.otf");
+}
+@font-face{
+  font-family: "gaming";
+  src: url("../src/font/gaming/Retro_Gaming.ttf");
+}
+
+
 body {
 
     padding:0;
     margin:0;
+    background-image: url("../img/body.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
   }
 /* mise en place de la navbar */
   nav {
-    background-color:#EEEEC6;
+    background-color:#273043;
     width:99vw;
     height:15vh;
     display:flex;
     align-items:center;
     justify-content:space-between;
+    color: #016fb9;
+    font-family: "gaming";
   }
   
   ul, li {
@@ -23,7 +40,7 @@ body {
     height: 6vh;
     width: auto;
     margin-right:10vw;
-    font-size:5vh;
+    font-size:3vh;
 
   }
   
@@ -48,48 +65,56 @@ body {
     display: flex;
       align-items: center;
       font-size: 5vh;  
-    color: rgb(253, 126, 0);
-    background-image: url("../img/body.jpg");
+    color: #016fb9;
+
     background-size: cover;
+    background-attachment: scroll;
   }
   #bryan{
-    text-align: center;     
+    text-align: center;
+    font-size: 5vh;     
     width: 100vw;
+    background-color: rgba(14, 11, 11, 0.753);
+    font-family: "gaming";
   }
 
   /* 2nd section de la page  */
   .propos{
+    clip-path: polygon(0 8%, 100% 16%, 100% 65%, 0 95%);
     display: grid;
     grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(4,1fr);
-    height: 110vh;
-    background-color: #FF5B2B;
+    grid-template-rows: repeat(5,1fr);
+    height: 100vh;
+    background-image:url("../img/accueil2.jpg");
+    background-size: contain;
   }
   .moncv{
     position: relative;
     left: 1vw; top: 1vh;
-grid-column: 1/4;
-grid-row: 1/5;
-background-image: url("../img/cv.png");
-background-size: cover;
-background-repeat: no-repeat;
-border: 2px solid  #F19F4D;
+    grid-column: 1/4;
+    grid-row: 2/5;
+    background-image: url("../img/cv.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid  #273043;
   }
 
   #moi{
-    border: 2px solid #F19F4D;
+    border: 2px solid #273043;
     position: relative;
     top: 1vh; right: 8vh;
     grid-column: 5/8;
-    grid-row: 1/4;
+    grid-row: 2/5;
     font-size: 3vh;
     text-align: justify;
     color:#34393E;
-    background-color: #5F8CA3;
+    background-color:#016fb9de;
+    padding-left: 2vh;
+    padding-right: 2vh;
   }
   #photo{
     grid-column: 5/10;
-    grid-row: 2/3;
+    grid-row: 3/4;
     
   }
   #photodeprofil{
@@ -104,8 +129,8 @@ border: 2px solid  #F19F4D;
     grid-column:8/11;
     padding: 6vh;
     grid-row: 2/3;
-    background-color: #5F8CA3;
-    border: 2px solid #F19F4D;
+    background-color:  #016fb9c5;
+    border: 2px solid #273043;
     position: relative;
     right: 1vh;
   }
@@ -114,7 +139,47 @@ border: 2px solid  #F19F4D;
     width: 16vh;
   }
 
-  #competences{
-    height: 100vh;
-    width: 100vw;
+  .competences{
+    display:flex;
+    height: 70vh;
+    width: 99vw;
+    background-color: #0782d4;
+    background-image:url("../img/background4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 57vh;
+    opacity: 1;
+  }
+
+
+  .titre{
+    width: 30vw;
+    position: relative;
+    left: 35vw;
+    text-align: center;
+    font-size: 4vh;
+    margin: 0; padding: 2vh;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: #0160b9;
+    font-family: "gaming";
+  }
+  .skills{
+    width: 50vw;
+    height: 80vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #c82223;
+    font-family: "gaming";
+  }
+  .leslogos{
+    height: 20vh;
+  }
+
+  .realisations{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(5,1fr);
+    height: 70vh;
+    width: 99vw;
+
   }
