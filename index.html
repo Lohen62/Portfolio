@@ -8,14 +8,16 @@
         <title>Mon portfolio!</title>
     </head> 
     <body>
+
         <header> 
          <nav>
             <img src="img/logo.png" id="logo" alt="Un logo">
+
              <ul>
-              <li> A propos </li>
-              <li> Compétences</li>
-              <li> Réalisations</li>
-              <li> Contact</li>
+              <li><a href="#navpropos">A propos</a>  </li>
+              <li><a href="#navcompet">Compétences</a></li>
+              <li><a href="#navreal">Réalisations</a> </li>
+              <li><a href="#navcontact">Contact</a> </li>
              </ul>
          </nav>
         </header>
@@ -24,8 +26,10 @@
 
             <h1 id="bryan"> Bryan Carbonnier <br>
                 Developpeur Web</h1>
-        </section>
+        </section>        
+        <div id="navpropos"></div>
         <h2 class="titre">A propos</h2>
+
         <section class="propos">
             
             <div class="moncv">
@@ -40,13 +44,16 @@
                       <div id="photo"> <img src="img/profil.JPG" alt="Photo de bryan" id="photodeprofil"> </div>
             </div>
             
+            <!-- partie droite, les logo qui seront rendu cliquable et emmeneront vers mes pages -->
             <div id="sociaux">
-                <img src="img/logofacebook.png" alt="logo facebook" id="facebook">
-                <img src="img/logotwitter.png" alt="logo twitter" id="twitter">
-                <img src="img/logolinkedin.png" alt="logo linkedin" id="linkedin">
-            </div>
+                <div><a href="https://www.facebook.com/BryanCarbonnier.dev" target="_blank"> <img src="img/logofacebook.png" alt="logo facebook" id="facebook"></a></div>
+                <div><a href="https://twitter.com/bryancarbonnier" target="_blank"> <img src="img/logotwitter.png" alt="logo twitter" id="twitter"></a></div>
+                <div><a href="https://www.linkedin.com/in/bryan-carbonnier/" target="_blank"> <img src="img/logolinkedin.png" alt="logo linkedin" id="linkedin"></a></div>
 
+            </div>
+            <a href="https://www.facebook.com/BryanCarbonnier"></a>
         </section>
+        <div id="navcompet"></div>
     <h2 class="titre"> mes compétences !</h2>
         <section class="competences">
             
@@ -55,28 +62,67 @@
                  <img src="img/logojs.png" alt="un logo de javascript" class="leslogos"> <br>
                  <img src="img/logophp.png" alt="un logo de php" class="leslogos">
                  <img src="img/logomysql.png" alt="un logo de php" class="leslogos"> <br>
+                 <img src="img/drapeauxfr.png" alt="un drapeau de la france" class="drapeaux">
+                <img src="img/drapeauxanglais.jpg" alt="un drapeau des royaumes unis" class="drapeaux" >
+           
         </div>
             
             <div class="skills">
-                <ul>
+                <ul class="ulcompetences">
                     <li> -Méthodes agiles</li>
                     <li> -Esprit d'équipe</li>
                     <li> -capacitées d'adaptations</li>
                 </ul>
 
-                <img src="img/drapeauxfr.png" alt="un drapeau de la france" class="leslogos">
-                <img src="img/drapeauxanglais.jpg" alt="un drapeau des royaumes unis" class="leslogos" >
-            </div>
-            
+                 </div>
+
         </section>
+        <div id="navreal"></div>
         <h2 class="titre"> mes réalisations !</h2>
 
         <section class="realisations">
+                <div class="jeuxfoot"><a href="projets/Exo_foot/index.html" target="_blank"></a> 
+                    <p id="textfoot">ceci est un exercice réaliser, pour apprendre à utiliser
+                    un peu plus HTML/CSS lors des premières semaines de formaitons</p> </div>
+                
+                <div class="exovitrine"><a href="projets/Exo_vitrine/accueil.html" target="_blank"></a> 
+                      <p id="textvitrine">réalisation d'un site vitrine pour un horloger.</p> </div>
+              
+                <div class="hotcold"><a href="projets/js_hot_cold/index.html" target="_blank"></a>
+                       <p id="texthotcold">petit jeux de chaud ou froid.</p> 
+                </div>
+                
+                <div class="exofonction"><a href="projets/exo_fonction/index.html" target="_blank"></a>
+                        <p id="textfonction"> <br>Exercice pour apprentissage d'utilisations des fonctions</p> 
+                </div>
+                <div class="pountaclick"> <a href="projets/pountaclick/index.html" target="_blank"> </a>
+                        <p id="textpounta">challenge: réalisation d'un jeux entierement en JS</p> </div>
+        </section>
+        <div id="navcontact"></div>
+        <h2 class="titre"> contactez moi !</h2>
 
+        <section class="contact">
+            <div id="contactme">
+                <form action="/mon_formulaire" method="post">
+
+                    <div>
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+                    <div>
+                        <label for="mail">e-mail :</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+                    <div>
+                        <label for="msg">Message :</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </div>
+
+                </form>
+            </div>
+            <div id="mesinformations"></div>
 
         </section>
-
-
     
     </body>
 </html>

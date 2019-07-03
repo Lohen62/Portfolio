@@ -66,9 +66,9 @@ body {
       align-items: center;
       font-size: 5vh;  
     color: #016fb9;
-
     background-size: cover;
     background-attachment: scroll;
+    
   }
   #bryan{
     text-align: center;
@@ -123,6 +123,12 @@ body {
     height: 35vh;
     width: 40vh;
   }
+  #navpropos{
+    position: absolute;
+    top: 100vh;
+    height: 2vh;
+    width: 100vw;
+  }
 
   /* 3eme partie, je met la section des reseaux sociaux  */
   #sociaux{
@@ -134,11 +140,38 @@ body {
     position: relative;
     right: 1vh;
   }
-  #facebook, #twitter, #linkedin{
+   #linkedin{
+     position: relative;
+     top: -14vh;
+     left: 16vw;
     height: 15vh;
     width: 16vh;
   }
+  #facebook{
+    position: relative;
+    top: 18vh;
+    left: 5vw;
+    height: 20vh;
+    width: 22vh;
+    margin: 0;
+  }
+  #twitter{
+    position: relative;
+    top: 1vh;
+    left: -2vw;
+    height: 15vh;
+    width: 15vh;
+  }
+  #facebook > a{
+    padding:2vw;
+  }
+  #navcompet{
+    position: absolute;
+    top: 209.9vh;
+    height: 2vh;
+    width: 10vw;
 
+  }
   .competences{
     display:flex;
     height: 70vh;
@@ -168,18 +201,255 @@ body {
     height: 80vh;
     flex-direction: column;
     flex-wrap: wrap;
-    color: #c82223;
+    color: #bb0885;
     font-family: "gaming";
+    
   }
   .leslogos{
     height: 20vh;
   }
+  .drapeaux{
+    height: 15vh;
+  }
+  .ulcompetences{
+background-color: rgba(0, 0, 0, 0.794);
+text-align: center;
+position: relative;
+top: 15vh;
+right: 5vw;
+  }
 
+  /* création de la section des réalisations */
+  #navreal{
+    position: absolute;
+    top: 289vh;
+    height: 2vh;
+    width: 10vw;
+
+  }
   .realisations{
     display: grid;
     grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(5,1fr);
-    height: 70vh;
+    grid-template-rows: repeat(8,15vh);
+    height: 80vh;
     width: 99vw;
-
+    font-family: "gaming"
   }
+  .realisations > p{
+    color: #bb0885;
+  }
+/* mise en place des différents projet à leurs place dans la section */
+  .jeuxfoot{
+    position: relative;
+    top: 1vh;
+    background-image: url("../img/foot.png");
+    background-size: cover;
+grid-column: 1/4;
+grid-row:1/3;
+  }
+
+  #textfoot{
+    position: relative;
+    top: 3vh;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    text-align: center;
+    font-size: 2.3vh;
+    color: #bb0885;
+    background-color: rgba(255, 255, 255, 0.829);
+    border-radius: 30%;
+    opacity: 0;
+  }
+  .jeuxfoot:hover{
+    border-radius: 40%;
+    transition-duration: 2s;
+  }
+  .jeuxfoot:hover #textfoot{
+    transition-duration: 1s;
+  opacity: 1;
+  }
+  .jeuxfoot > a{
+    position: relative;
+    top: 13vh;
+    left: 0.5vw;
+    padding: 15vh;
+    padding-left: 22vw;
+    padding-right: 7vw;
+  }
+                                          /* Exo 2 */
+.exovitrine{
+  position: relative;
+  right: 5vh;
+  top: 1vh;
+  background-image: url("../img/vitrine.png");
+  background-size: cover;
+  grid-column:  5/8;
+  grid-row: 1/3;
+}
+
+#textvitrine{
+  position: relative;
+    text-align: center;
+    font-size: 2.3vh;
+    color: #bb0885;
+    background-color: rgba(255, 255, 255, 0.829);
+    position: relative;
+    top: 7vh;
+    border-radius: 30%;
+    opacity: 0;
+}
+.exovitrine:hover{
+  border-radius: 40%;
+transition-duration: 2s;
+}
+.exovitrine:hover #textvitrine{
+  transition-duration: 1s;
+  opacity: 1;
+}
+.exovitrine > a {
+position: relative;
+    top: 13vh;
+    left: 0.5vw;
+    padding: 15vh;
+    padding-left: 22vw;
+    padding-right: 7vw;
+}
+                                   /* projet 3  */
+.hotcold{
+  position: relative;
+  top: 1vh;
+  background-image: url("../img/hotcold.png");
+  background-size: cover;
+  grid-column: 8/10;
+  grid-row: 1/2;
+  overflow: hidden; 
+}
+#texthotcold{
+  opacity: 0;
+  text-align: center;
+  font-size: 2.3vh; 
+  color: #bb0885;
+  background-color: rgba(255, 255, 255, 0.829);
+  border-radius: 30%
+} 
+
+.hotcold:hover #texthotcold{
+  opacity:1;
+  transition-duration: 1s;
+}
+.hotcold:hover{
+border-radius: 40%;
+transition-duration: 2s;
+
+}
+
+.hotcold > a {
+  position: relative;
+    top: 6.5vh;
+    padding: 6.8vh;
+    padding-left: 20vw;
+    padding-right: 8vw;
+}
+
+                                      /* projet 4  */
+.exofonction{
+  position: relative;
+  top: 1vh;
+  background-image: url("../img/exofonction.png");
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 4/6;
+  overflow: hidden; 
+}
+.exofonction > a {
+  position: relative;
+    top: 15vh;
+    padding: 15vh;
+    padding-right: 22vw;
+}
+#textfonction{
+  opacity: 0;
+  text-align: center;
+  font-size: 2.3vh; 
+  position: relative;
+  top: 4vh;
+  color: #bb0885;
+}
+.exofonction:hover #textfonction{
+  opacity:1;
+  transition-duration: 1s;
+}
+.exofonction:hover{
+border-radius: 40%;
+transition-duration: 2s;
+
+}
+                                /* Exo 5 */
+
+.pountaclick{
+  position: relative;
+  top: 1vh;
+  background-image: url("../img/pountaclick.png");
+  background-size: cover;
+  grid-column: 5/8;
+  grid-row: 4/6;
+  overflow: hidden;
+}
+.pountaclick > a {
+  position: relative;
+  top: 15vh;
+  padding: 15vh;
+  padding-right: 22vw;
+    
+}
+#textpounta{
+  opacity: 0;
+  text-align: center;
+  font-size: 2.3vh; 
+  position: relative;
+  top: 4vh;
+  color: #bb0885;
+}
+
+.pountaclick:hover #textpounta{
+  opacity:1;
+  transition-duration: 1s;
+}
+.pountaclick:hover{
+border-radius: 40%;
+transition-duration: 2s;
+
+}
+
+                                /* réalisation de la partie contact */
+
+#navcontact{
+  position: absolute;
+  top: 378vh;
+  height: 2vh;
+  width: 10vw;
+}
+
+.contact{
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  font-family: "gamer";
+  color: #0160b9;
+ 
+
+}
+
+#contactme{
+  background-image: url("../img/contact2.jpg");
+  background-size: cover;
+  height: 67vh;
+  width: 49vw;
+}
+#mesinformations{
+  background-image: url("../img/contact1.jpg");
+  height: 67vh;
+  width: 49vw;
+  background-size: cover;
+
+}
