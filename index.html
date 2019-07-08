@@ -14,10 +14,10 @@
             <img src="img/logo.png" id="logo" alt="Un logo">
 
              <ul>
-              <li><a href="#navpropos">A propos</a>  </li>
-              <li><a href="#navcompet">Compétences</a></li>
-              <li><a href="#navreal">Réalisations</a> </li>
-              <li><a href="#navcontact">Contact</a> </li>
+              <li id="icone1"><a href="#navpropos">A propos</a>  </li>
+              <li id="icone2"><a href="#navcompet">Compétences </a></li>
+              <li id="icone3"><a href="#navreal">Réalisations </a> </li>
+              <li id="icone4"><a href="#navcontact">Contact </a> </li>
              </ul>
          </nav>
         </header>
@@ -32,15 +32,15 @@
 
         <section class="propos">
             
-            <div class="moncv">
-            </div>
+            <div class="moncv"> <a id="cvpadding" href="src/bryan_cv.pdf"
+                download="bryan_cv.pdf" target="_blank"></a> </div>
             <div id="moi">
                 <div id="présentation">
-                    <p id="texte"> J'ai soif d'apprentissage et suis passionné du numérique depuis petit,
-                            Mettant à profit mes expériences passées, qui ont forgé ce que je suis, 
-                            Je cherche aujourd'hui à aiguiser mes compétences afin de devenir un véritable couteau suisse du développement.
-                            dynamique, joyeux, passionné d'informatique, passe le plus clair du temps libre à lire des mangas. 
-                            je pensse que toutes les épreuves passées permettent de s'améliorer!</p> </div>
+                    <p id="texte"> J'ai soif d'apprentissage et suis passionné du numérique depuis petit;
+                        mettant à profit mes expériences passées, qui ont forgé ce que je suis; 
+                        je cherche aujourd'hui à aiguiser mes compétences afin de devenir un véritable couteau suisse du développement.
+                        dynamique, joyeux, passionné d'informatique, passe le plus clair du temps libre à lire des mangas. 
+                        je pensse que toutes les épreuves passées permettent de s'améliorer!</p> </div>
                       <div id="photo"> <img src="img/profil.JPG" alt="Photo de bryan" id="photodeprofil"> </div>
             </div>
             
@@ -69,9 +69,11 @@
             
             <div class="skills">
                 <ul class="ulcompetences">
-                    <li> -Méthodes agiles</li>
-                    <li> -Esprit d'équipe</li>
-                    <li> -capacitées d'adaptations</li>
+                    <li id="logocomp1"> Méthodes agiles</li>
+                    <li id="logocomp2"> Esprit d'équipe</li>
+                    <li id="logocomp3"> capacitées d'adaptations</li>
+                    <li id="logocomp4"> Autonomie </li>
+                    <li id="logocomp5"> Flexibilité</li>
                 </ul>
 
                  </div>
@@ -102,25 +104,24 @@
         <h2 class="titre"> contactez moi !</h2>
 
         <section class="contact">
+            
+            
+        
+    
             <div id="contactme">
-                <form action="/mon_formulaire" method="post">
-
-                    <div>
-                        <label for="name">Nom :</label>
-                        <input type="text" id="name" name="user_name">
-                    </div>
-                    <div>
-                        <label for="mail">e-mail :</label>
-                        <input type="email" id="mail" name="user_mail">
-                    </div>
-                    <div>
-                        <label for="msg">Message :</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </div>
-
-                </form>
+            <div class="tel"> 
+                <p id="texttel">06-50-44-72-73</p>
+                        </div>
             </div>
-            <div id="mesinformations"></div>
+
+            <div class="mail">
+                <p id="textmail">bry.carbonnier@gmail.com</p>
+            </div>
+
+            <div id="mesinformations">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194.25691647975034!2d1.8296065087639262!3d50.945698499561914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dc3f1d32d73897%3A0x6669234f4e735085!2s2+Rue+de+Constantine%2C+62100+Calais!5e1!3m2!1sfr!2sfr!4v1562228889500!5m2!1sfr!2sfr" 
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
 
         </section>
     
